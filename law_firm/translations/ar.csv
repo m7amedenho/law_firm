@@ -1,0 +1,78 @@
+Law Firm,إدارة المحاماة
+Legal Management,إدارة المحاماة
+Lawyer,محامي
+Legal Admin,مساعد قانوني
+Law Firm Partner,شريك المكتب
+Court,المحكمة
+Case Type,نوع القضية
+Law Case,القضية
+Case Hearing,الجلسة
+Power of Attorney,التوكيل
+Case Document,مستند القضية
+Court Name,اسم المحكمة
+Court Type,نوع المحكمة
+City / Governorate,المدينة / المحافظة
+Address,العنوان
+Description,الوصف
+Series,المسلسل
+Case Title,عنوان القضية
+Case Number,رقم الدعوى
+Case Year,سنة الدعوى
+Status,الحالة
+Client,الموكل
+Opponent Name,اسم الخصم
+Opponent's Lawyer,محامي الخصم
+Assigned Lawyer,المحامي المسؤول
+Details,التفاصيل
+Case,القضية
+Hearing Date,تاريخ الجلسة
+Hearing Time,وقت الجلسة
+Court Room / Circuit,رقم القاعة / الدائرة
+Judge Name,اسم القاضي
+Hearing Status,حالة الجلسة
+Pleadings & Decisions,المذكرات والقرارات
+Pleading Notes,مذكرات الدفاع
+Court Decision,قرار المحكمة
+Next Hearing Date,تاريخ الجلسة القادمة
+POA Number,رقم التوكيل
+POA Type,نوع التوكيل
+Issue Date,تاريخ الإصدار
+Expiry Date,تاريخ الانتهاء
+Active,ساري
+POA Document (PDF),صورة التوكيل (PDF)
+Document Type,نوع المستند
+Title,العنوان
+Version,الإصدار
+Latest Version,أحدث إصدار
+Document (PDF),المستند (PDF)
+Notes,ملاحظات
+Uploaded By,تم الرفع بواسطة
+Upload Date,تاريخ الرفع
+Hearing Schedule Report,تقرير جدول الجلسات
+Case Status Summary,تقرير موقف القضايا
+From Date,من تاريخ
+To Date,إلى تاريخ
+Court Room,قاعة المحكمة
+Total,الإجمالي
+Not Set,غير محدد
+Law Case Summary,ملخص القضية
+Case Hearing Minutes,محضر جلسة
+Hearing tomorrow for case {0},جلسة غدًا للقضية {0}
+Reminder: Court Hearing Tomorrow - {0},تذكير: جلسة محكمة غدًا - {0}
+You have a hearing scheduled tomorrow ({0}) for case <b>{1}</b> at court room {2}.,لديك جلسة مجدولة غدًا ({0}) للقضية <b>{1}</b> بقاعة {2}.
+POA {0} for {1} expires on {2},التوكيل {0} الخاص بـ {1} ينتهي في {2}
+Authorized Signatory,الممثل القانوني / الموقّع
+The person authorized to sign / act on behalf of the client (important when the client is a company).,الشخص المُفوَّض بالتوقيع والتصرف نيابةً عن الموكل، ويجب تحديده في حال كان الموكل شخصًا اعتباريًا (شركة).
+Case ID,رقم القضية
+Total Hearings,إجمالي الجلسات
+Last Hearing Date,تاريخ آخر جلسة
+Last Hearing Status,حالة آخر جلسة
+Active POA,توكيل ساري
+Closed On,تاريخ الإغلاق
+Closure Notes,ملاحظات الإغلاق
+Law Case Register,سجل القضايا التفصيلي
+Yes,نعم
+No,لا
+Legal fee request for case {0} ({1}),طلب أتعاب محاماة للقضية {0} ({1})
+Requested amount: {0},المبلغ المطلوب: {0}
+No Legal Admin or Law Firm Partner user was found to send the fee request to.,لم يتم العثور على مستخدم بدور "مساعد قانوني" أو "شريك المكتب" لإرسال طلب الأتعاب إليه.

@@ -4,6 +4,8 @@ app_publisher = "redtch"
 app_description = "Legal management or paralegal studies is an academic, vocational, and professional discipline that is a hybrid between the study of law and management"
 app_email = "m7amedenho@hotmail.com"
 app_license = "gpl-3.0"
+app_icon = "octicon octicon-law"
+app_color = "#2c3e50"
 
 # Apps
 # ------------------
@@ -120,7 +122,7 @@ app_license = "gpl-3.0"
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "law_firm.notifications.get_notification_config"
+notification_config = "law_firm.notifications.get_notification_config"
 
 # Awesome Bar
 # -----------
@@ -144,34 +146,20 @@ app_license = "gpl-3.0"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Employee": {
+		"on_update": "law_firm.permissions.sync_employee_user_permission",
+	},
+}
 
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"law_firm.tasks.all"
-# 	],
-# 	"daily": [
-# 		"law_firm.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"law_firm.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"law_firm.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"law_firm.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	"daily": [
+		"law_firm.tasks.daily"
+	],
+}
 
 # Testing
 # -------
@@ -261,4 +249,16 @@ app_license = "gpl-3.0"
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
+
+# Fixtures
+# --------
+# Custom roles and custom fields shipped with the app, synced on `bench migrate`
+
+fixtures = [
+	{"doctype": "Role", "filters": [["name", "in", ["Lawyer", "Legal Admin", "Law Firm Partner"]]]},
+	{
+		"doctype": "Custom Field",
+		"filters": [["dt", "in", ["Task", "Sales Invoice"]], ["fieldname", "=", "law_case"]],
+	},
+]
 

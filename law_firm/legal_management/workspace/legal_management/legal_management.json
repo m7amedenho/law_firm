@@ -1,0 +1,211 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"header01\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>⚖️ إدارة المحاماة - Legal</b></span>\",\"col\":12}},{\"id\":\"shortcuts01\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"قضية جديدة\",\"col\":3}},{\"id\":\"shortcuts02\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"جلسة جديدة\",\"col\":3}},{\"id\":\"shortcuts03\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"توكيل جديد\",\"col\":3}},{\"id\":\"shortcuts04\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"الموكلين\",\"col\":3}},{\"id\":\"spacer01\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"header02\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>العمليات والتقارير</b></span>\",\"col\":12}},{\"id\":\"card01\",\"type\":\"card\",\"data\":{\"card_name\":\"العمليات اليومية\",\"col\":4}},{\"id\":\"card02\",\"type\":\"card\",\"data\":{\"card_name\":\"سجلات الموكلين\",\"col\":4}},{\"id\":\"card03\",\"type\":\"card\",\"data\":{\"card_name\":\"البيانات الأساسية\",\"col\":4}},{\"id\":\"card04\",\"type\":\"card\",\"data\":{\"card_name\":\"التقارير\",\"col\":4}}]",
+ "creation": "2026-09-09 00:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "law",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Legal Management",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "العمليات اليومية",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "القضايا",
+   "link_count": 0,
+   "link_to": "Law Case",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "الجلسات",
+   "link_count": 0,
+   "link_to": "Case Hearing",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "المهام",
+   "link_count": 0,
+   "link_to": "Task",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "الأرشفة (المستندات)",
+   "link_count": 0,
+   "link_to": "Case Document",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "سجلات الموكلين",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "الموكلين",
+   "link_count": 0,
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "التوكيلات",
+   "link_count": 0,
+   "link_to": "Power of Attorney",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "البيانات الأساسية",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "المحاكم",
+   "link_count": 0,
+   "link_to": "Court",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "أنواع القضايا",
+   "link_count": 0,
+   "link_to": "Case Type",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "التقارير",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "جدول جلسات الأسبوع",
+   "link_count": 0,
+   "link_to": "Hearing Schedule Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "موقف القضايا المفتوحة",
+   "link_count": 0,
+   "link_to": "Case Status Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "سجل القضايا التفصيلي",
+   "link_count": 0,
+   "link_to": "Law Case Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-09-11 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Legal Management",
+ "name": "Legal Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 30.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "New",
+   "label": "قضية جديدة",
+   "link_to": "Law Case",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "New",
+   "label": "جلسة جديدة",
+   "link_to": "Case Hearing",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "New",
+   "label": "توكيل جديد",
+   "link_to": "Power of Attorney",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "label": "الموكلين",
+   "link_to": "Customer",
+   "type": "DocType"
+  }
+ ],
+ "title": "Legal Management",
+ "type": "Workspace"
+}

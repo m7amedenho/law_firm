@@ -1,0 +1,241 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-09-09 00:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "case_title",
+  "case_number",
+  "case_year",
+  "status",
+  "column_break_status",
+  "client",
+  "authorized_signatory",
+  "opponent_name",
+  "opponent_lawyer",
+  "section_break_classification",
+  "case_type",
+  "court",
+  "column_break_classification",
+  "assigned_lawyer",
+  "section_break_description",
+  "description",
+  "section_break_closure",
+  "closed_on",
+  "column_break_closure",
+  "closure_notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "LC-.YYYY.-.#####",
+   "print_hide": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Case Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "case_number",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Case Number"
+  },
+  {
+   "fieldname": "case_year",
+   "fieldtype": "Data",
+   "label": "Case Year"
+  },
+  {
+   "default": "متداولة",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "متداولة\nمحجوزة للحكم\nصدر حكم\nمستأنفة\nمنتهية",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_status",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Client",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "description": "The person authorized to sign / act on behalf of the client (important when the client is a company).",
+   "fieldname": "authorized_signatory",
+   "fieldtype": "Link",
+   "label": "Authorized Signatory",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "opponent_name",
+   "fieldtype": "Data",
+   "label": "Opponent Name"
+  },
+  {
+   "fieldname": "opponent_lawyer",
+   "fieldtype": "Data",
+   "label": "Opponent's Lawyer"
+  },
+  {
+   "fieldname": "section_break_classification",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "case_type",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Case Type",
+   "options": "Case Type"
+  },
+  {
+   "fieldname": "court",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Court",
+   "options": "Court"
+  },
+  {
+   "fieldname": "column_break_classification",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assigned_lawyer",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Assigned Lawyer",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "section_break_description",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_closure",
+   "fieldtype": "Section Break",
+   "label": "Closure"
+  },
+  {
+   "fieldname": "closed_on",
+   "fieldtype": "Date",
+   "label": "Closed On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_closure",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "closure_notes",
+   "fieldtype": "Small Text",
+   "label": "Closure Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "الجلسات",
+   "link_doctype": "Case Hearing",
+   "link_fieldname": "case"
+  },
+  {
+   "group": "الأرشفة",
+   "link_doctype": "Case Document",
+   "link_fieldname": "case"
+  },
+  {
+   "group": "المهام والفواتير",
+   "link_doctype": "Task",
+   "link_fieldname": "law_case"
+  },
+  {
+   "group": "المهام والفواتير",
+   "link_doctype": "Sales Invoice",
+   "link_fieldname": "law_case"
+  }
+ ],
+ "modified": "2026-09-09 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Legal Management",
+ "name": "Law Case",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Law Firm Partner",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Legal Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Lawyer"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "case_title",
+ "track_changes": 1
+}

@@ -1,0 +1,26 @@
+[
+ {
+  "doctype": "Custom Field",
+  "name": "Task-law_case",
+  "dt": "Task",
+  "fieldname": "law_case",
+  "label": "Law Case",
+  "fieldtype": "Link",
+  "options": "Law Case",
+  "insert_after": "project",
+  "in_standard_filter": 1,
+  "translatable": 0
+ },
+ {
+  "doctype": "Custom Field",
+  "name": "Sales Invoice-law_case",
+  "dt": "Sales Invoice",
+  "fieldname": "law_case",
+  "label": "Law Case",
+  "fieldtype": "Link",
+  "options": "Law Case",
+  "insert_after": "customer",
+  "in_standard_filter": 1,
+  "translatable": 0
+ }
+]

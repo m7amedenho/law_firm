@@ -1,0 +1,43 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2026-09-09 00:00:00.000000",
+ "disabled": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "case_type",
+   "fieldtype": "Link",
+   "label": "Case Type",
+   "options": "Case Type"
+  },
+  {
+   "fieldname": "assigned_lawyer",
+   "fieldtype": "Link",
+   "label": "Assigned Lawyer",
+   "options": "Employee"
+  }
+ ],
+ "is_standard": "Yes",
+ "letter_head": null,
+ "modified": "2026-09-09 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Legal Management",
+ "name": "Case Status Summary",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Law Case",
+ "report_name": "Case Status Summary",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Law Firm Partner"
+  },
+  {
+   "role": "Legal Admin"
+  }
+ ]
+}

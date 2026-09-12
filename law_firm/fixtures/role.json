@@ -1,0 +1,23 @@
+[
+ {
+  "doctype": "Role",
+  "name": "Lawyer",
+  "role_name": "Lawyer",
+  "desk_access": 1,
+  "is_custom": 1
+ },
+ {
+  "doctype": "Role",
+  "name": "Legal Admin",
+  "role_name": "Legal Admin",
+  "desk_access": 1,
+  "is_custom": 1
+ },
+ {
+  "doctype": "Role",
+  "name": "Law Firm Partner",
+  "role_name": "Law Firm Partner",
+  "desk_access": 1,
+  "is_custom": 1
+ }
+]
